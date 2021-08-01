@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF"=8>
+ <meta http-equiv="X-UA-compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <title>GreatDay.org</title>
+</head>
+<body>
+<header>
+<a href="#" class="logo"><span>G</span>reat<span>D</span>ay</a>
+<div class="menutoggle" onclick="toggleMenu"();"></div>
+<ul class="navbar">
+<li><a href="#banniere" onclick="toggleMenu"();">Accueil</a></li>
+<li><a href="#apropos" onclick="toggleMenu"();">A propos</a></li>
+<li><a href="#catégories"onclick="toggleMenu"();">Catégories</a></li>
+<li><a href="#identifiez" onclick="toggleMenu"();">Identifiez-Vous</a></li>
+<a href="#" class="btn-Achat" onclick="toggleMenu"();"> Liste de(s) Achat(s)</a>
+</ul> 
+</header>  
+<section class="banniere" id="banniere">
+<div class="contenu">
+<h2> Articles de qualités, des prix imbattables</h2>
+<p>Great day est une plateforme de ventes en ligne, ici, vous trouverez toutes sortes des articles dont vous avez besoins avec une garantie assurée</p>
+<a href:"#" class="btn1"> Catégories</a>
+<a href:"#" class="btn2"> Liste de(s) Achat(s)</a>
+</div>
+</section>
+<section class="a propos" id="apropos">
+<div class="row">
+<div class="col50" >
+<h2 class="titre-texte"><span> A</span> Propos de</h2>
+<p>Great day est une plateforme de ventes en ligne, ici,vous trouverez toutes sortes des articles dont vous avez 
+besoins avec une garantie assurée .Great day est une plateforme de ventes en ligne, ici,vous trouverez toutes sortes des articles dont vous avez 
+besoins avec une garantie assurée .Great day est une plateforme de ventes en ligne, ici,vous trouverez toutes sortes des articles dont vous avez 
+besoins avec une garantie assurée .
+</p>
+</div>
+<div class="col50">
+<div class="img">
+ <img src="./images/IMG_9817.jpg" alt="image">
+</div>
+</div>
+</div>
+</section>
+<section class="catégories" id="catégories">
+<div class="titre" >
+<h2 class="titre-texte"><span> C</span>atégories</h2>
+<p>Great day est une plateforme de ventes en ligne, ici,vous trouverez toutes sortes des articles dont vous avez 
+besoins avec une garantie assurée.
+</p>
+</div>
+<div class="contenu">
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_9816.jpg" alt="">
+</div>
+<div class="text">
+<h3>Champ</h3>
+</div>
+</div>
+
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_98168.jpg" alt="">
+</div>
+<div class="text">
+<h3>Tableau</h3>
+</div>
+</div>
+
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_98169.jpg" alt="">
+</div>
+<div class="text">
+<h3>Tableau Numérique</h3>
+</div>
+</div>
+
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_98168.jpg" alt="">
+</div>
+<div class="text">
+<h3>Tableau</h3>
+</div>
+</div>
+
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_9816.jpg" alt="">
+</div>
+<div class="text">
+<h3>Champ</h3>
+</div>
+</div>
+
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_98169.jpg" alt="">
+</div>
+<div class="text">
+<h3>Tableau Numérique</h3>
+</div>
+</div>
+
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_9816.jpg" alt="">
+</div>
+<div class="text">
+<h3>Champ</h3>
+</div>
+</div>
+
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_98168.jpg" alt="">
+</div>
+<div class="text">
+<h3>Tableau</h3>
+</div>
+</div>
+
+<div class="box">
+<div class="imbox">
+<img src="./images/IMG_98169.jpg" alt="">
+</div>
+<div class="text">
+<h3>Tableau Numérique</h3>
+</div>
+</div>
+
+
+</div>
+<div class="titre">
+<a href="#" class="btn1">Voir Plus</a>
+</div>
+</section>
+<section class="identifiez" id="identifiez">
+<div class="titre noir">
+<h2 class="titre-text"><span>I</span>dentifiez-<span>V</span>ous</h2>
+<p>Great day est une plateforme de ventes en ligne</p>
+</div>
+<div class="identifiezform">
+<h3>Envoyer nous un message</h3>
+<div  class="inputboite">
+<input type="text" placeholder="Nom">
+</div>
+<div class="inputboite">
+<input type="text" placeholder="Email">
+</div>
+<div class="inputboite">
+<textarea placeholder="message"></textarea>
+</div>
+<div class="inputboite">
+<input type="submit" value="envoyer">
+</div>
+</div>
+</div>
+</section>
+<div class="copyright"> 
+<p>copyright 2021 <a href="#"> Maombi</a> Tous droits reservés</p>
+</div>
+<script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        const header =document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+});
+
+function toggleMenu(){
+const tmenutoggle= document.querySelector('.menutoggle');
+const navbar = document.queruSelector('.navbar');
+menutoggle;classList.toggle('active');
+navbar.classList.toggle('active');
+}
+</script>
+</body>
+</html>
